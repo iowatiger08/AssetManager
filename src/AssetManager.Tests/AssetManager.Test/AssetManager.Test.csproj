@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Tony.Dillon-Hansen</Authors>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>RuanAssetManager.Test</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>RuanAssetManager.Test</PackageId>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.7.0" />
+    <PackageReference Include="NUnit" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RuanAssetManager\AssetManager.csproj" />
+  </ItemGroup>
+
+</Project>
